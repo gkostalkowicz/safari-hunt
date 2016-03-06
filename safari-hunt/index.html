@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8"> 
+<title>Safari Hunt</title>
+<link rel="stylesheet" href="res/style.css">
+<script src="res/jquery-2.1.4.js"></script>
+<script src="res/sceneChoice.js"></script>
+<script src="res/photoCamera.js"></script>
+<script>
+$(function() {
+	handleSceneChoiceScreenWindowLoad();
+	handlePhotoCameraScreenWindowLoad();	
+});
+</script>
+</head>
+<body>
+
+<section id="sceneChoiceScreen">
+<div id="scenePreviewArea">
+<img id="scenePreview">
+<p><a href="#" id="photoCameraLink">Open this photo</a></p>
+</div>
+
+<div>
+<h2>Your picture</h2>
+<p>Pick one: <input type="file" id="imageInput"></p>
+</div>
+
+<div id="gallery">
+<h2>Gallery</h2>
+<div id="galleryPhotos">
+<a href="#"><img src="gallery/kenya.jpg"></a>
+<a href="#"><img src="gallery/tanzania.jpg"></a>
+<a href="#"><img src="gallery/antarctic.jpg"></a>
+<a href="#"><img src="gallery/ocean.jpg"></a>
+</div>
+</div>
+
+<div id="credits">
+<p>Credits for great pictures go to:</p>
+<ul>
+<li>Pelicans - By Chris Makarsky from San Francisco, CA - 'pelicans', CC BY-SA 2.0, <a href="https://www.flickr.com/photos/cmak/6615304959">source</a></li>
+<li>Penguins - By Jason Auch, CC BY 2.0, <a href="https://www.flickr.com/photos/10004136@N05/3212303306">source</a></li>
+<li>Fish - By Phil Manker - 'Swirling Fish School', CC BY 2.0, <a href="https://www.flickr.com/photos/philmanker/4712166195">source</a></li>
+<li>Elephants - By David Berkowitz - 'Elephants - Serengeti National Park safari - Tanzania, Africa', CC BY 2.0, <a href="https://www.flickr.com/photos/davidberkowitz/5699832418">source</a></li>
+</ul>
+</div>
+</section>
+
+<section id="photoCameraScreen">
+<div id="sceneArea">
+<img id="scene">
+<img id="frame">
+<div id="frameSkeleton"><div id="skeletonDimensions"></div></div>
+</div>
+<div id="photosArea">
+</div>
+<div id="menu">
+<p id="sceneChoiceLinkPara"><a href="#">Another picture?</a></p>
+<p>Photo blur</p><input id="blurInput" type="range" min="0" max="1" step="0.01" value="0.2">
+<p>Frame size ↔</p><input id="frameWidthInput" type="range" min="0" max="1" step="0.01" value="0.3">
+<p>Frame size ↕</p><input id="frameHeightInput" type="range" min="0" max="1" step="0.01" value="0.3">
+</div>
+</section>
+
+</body>
+</html> 
