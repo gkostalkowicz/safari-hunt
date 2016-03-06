@@ -1,6 +1,4 @@
 # safari-hunt
-HTML5 & CSS3 photo camera application
-
 This is a nice photo-camera-like application that demonstrates some HTML5 and CSS3 features.
 It's not particularly big, but creating it was a lot of fun.
 
